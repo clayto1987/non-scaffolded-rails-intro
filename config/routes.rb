@@ -5,9 +5,14 @@ NonScaffoldedExample::Application.routes.draw do
 
   #the URL /about maps to the about action of the info controller
   match 'about' => 'info#about', :as => 'about'
+  #this allows you to change the url without having to change the name/path referred to everywhere
+  #e.g. match 'about_company_name' => 'info#contact', :as => 'contact'
 
   #the URL /contact maps to the contact action of the info controller
   match 'contact' => 'info#contact', :as => 'contact'
+  #this allows you to change the url without having to change the name/path referred to everywhere
+  #e.g. match 'contact_us' => 'info#contact', :as => 'contact'
+
 
 
   # The priority is based upon order of creation:
