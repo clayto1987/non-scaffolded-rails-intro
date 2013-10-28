@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" name="Default" comment="" />
+    <list default="true" id="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/info/about.html.erb" afterPath="$PROJECT_DIR$/app/views/info/about.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/info/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/info/contact.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/info/index.html.erb" afterPath="$PROJECT_DIR$/app/views/info/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+    </list>
     <ignored path="non_scaffolded_example.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" time="1382984387501" ignored="false" />
     <file path="/info_controller.rb" changelist="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" time="1382984655670" ignored="false" />
+    <file path="/contact.html.erb" changelist="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" time="1382984934192" ignored="false" />
+    <file path="/about.html.erb" changelist="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" time="1382984941521" ignored="false" />
+    <file path="/index.html.erb" changelist="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" time="1382984949778" ignored="false" />
+    <file path="/routes.rb" changelist="2b9cdcfd-0894-45d8-b77d-800a60ddb4ae" time="1382985369314" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="info_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="info_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/info_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="371" selection-end="371" vertical-scroll-proportion="0.25516403">
+            <state line="4" column="11" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -37,7 +47,7 @@
       <file leaf-file-name="contact.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/info/contact.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -46,7 +56,7 @@
       <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/info/about.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -55,7 +65,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/info/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="69" selection-start="353" selection-end="353" vertical-scroll-proportion="0.14580803">
               <folding />
             </state>
           </provider>
@@ -80,6 +99,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/controllers/info_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/info/contact.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/info/about.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/info/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -129,6 +152,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="non_scaffolded_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="non_scaffolded_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="non_scaffolded_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,30 +578,37 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/controllers/info_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="11" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/info/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/info/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/info/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/info_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="371" selection-end="371" vertical-scroll-proportion="0.25516403">
+        <state line="8" column="69" selection-start="353" selection-end="353" vertical-scroll-proportion="0.14580803">
           <folding />
         </state>
       </provider>
