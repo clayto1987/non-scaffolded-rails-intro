@@ -1,7 +1,4 @@
 NonScaffoldedExample::Application.routes.draw do
-  get "posts/index"
-
-  get "posts/show"
 
   #The URL / to load the index action of the info controller
   root :to => 'info#index'
@@ -9,6 +6,7 @@ NonScaffoldedExample::Application.routes.draw do
 
   #the URL /about maps to the about action of the info controller
   match 'about' => 'info#about', :as => 'about'
+  #match 'about' => 'info#about', :as => 'about', :via => :get
   #this allows you to change the url without having to change the name/path referred to everywhere
   #e.g. match 'about_company_name' => 'info#contact', :as => 'contact'
 
@@ -17,6 +15,11 @@ NonScaffoldedExample::Application.routes.draw do
   #this allows you to change the url without having to change the name/path referred to everywhere
   #e.g. match 'contact_us' => 'info#contact', :as => 'contact'
 
+  #the URL /posts maps to the index action of the posts controller
+  match 'posts' => 'posts#index', :as => 'posts', :via => :get
+
+  #the URL /posts/# maps to the show action of the posts controller
+  match 'posts/:id' => 'posts#show', :as => 'post', :via => :get
 
 
   # The priority is based upon order of creation:
