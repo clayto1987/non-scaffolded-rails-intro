@@ -1,4 +1,8 @@
 NonScaffoldedExample::Application.routes.draw do
+  get "posts/index"
+
+  get "posts/show"
+
   #The URL / to load the index action of the info controller
   root :to => 'info#index'
   #path to     controller#file
