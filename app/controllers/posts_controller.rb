@@ -12,6 +12,15 @@ class PostsController < ApplicationController
   end #loads app/views/posts/new.html.erb
 
   def create
+    @post = Post.new(params[:post])
 
+    if @post.save
+      #redirect to index action
+      redirect_to :action => :index #redirects to new page and leaves state forgetting everything in @post
+    else
+      #@post.title = "" #removes title prior to putting things back in the form
+      #load up the view associated with the new action
+      render :action => :new #keeps state and remembers @post and puts the data back into the form
+    end
   end #On success redirects to index else uses app/views/posts/new.html.erb
 end

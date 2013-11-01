@@ -27,6 +27,9 @@ NonScaffoldedExample::Application.routes.draw do
   #the URL /posts/# maps to the show action of the posts controller
   match 'posts/:id' => 'posts#show', :as => 'post', :via => :get
 
+  #the URL /posts/# maps to the show action of the posts controller
+  match 'posts/:id' => 'posts#destroy', :as => 'post', :via => :get
+
         #The priority is based upon order of creation:
         #first created -> highest priority.
         #
