@@ -30,6 +30,14 @@ NonScaffoldedExample::Application.routes.draw do
   #the URL /posts/# accessed via DELETE maps to the destroy action of the posts controller
   match 'posts/:id' => 'posts#destroy', :as => 'delete_post', :via => :delete
 
+  #the URL /posts/#/edit maps to the edit action of the posts controller
+  match 'posts/:id/edit' => 'posts#edit', :as => 'edit_post', :via => :get
+
+  #the URL /posts/# accessed via PUT maps to the update action of the posts controller
+  match 'posts/:id' => 'posts#update', :as => 'update_post', :via => :put
+
+  #could replace lines 18-37 with: resources :posts
+
         #The priority is based upon order of creation:
         #first created -> highest priority.
         #
