@@ -27,8 +27,8 @@ NonScaffoldedExample::Application.routes.draw do
   #the URL /posts/# maps to the show action of the posts controller
   match 'posts/:id' => 'posts#show', :as => 'post', :via => :get
 
-  #the URL /posts/# maps to the show action of the posts controller
-  match 'posts/:id' => 'posts#destroy', :as => 'post', :via => :get
+  #the URL /posts/# accessed via DELETE maps to the destroy action of the posts controller
+  match 'posts/:id' => 'posts#destroy', :as => 'delete_post', :via => :delete
 
         #The priority is based upon order of creation:
         #first created -> highest priority.

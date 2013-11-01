@@ -23,4 +23,10 @@ class PostsController < ApplicationController
       render :action => :new #keeps state and remembers @post and puts the data back into the form
     end
   end #On success redirects to index else uses app/views/posts/new.html.erb
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to :action => :index
+  end #No destroy.html.erb needs to exist, we always redirect
 end
