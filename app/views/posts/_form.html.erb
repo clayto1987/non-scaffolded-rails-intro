@@ -1,0 +1,21 @@
+<!-- the f block param is called a form building
+     it will help us build our form
+     f is aware that a post has a tile and a content -->
+<%= form_for @post do |f| %>
+    <% if @post.errors.any? %>
+        <p style="color:red">All posts require a title and content.</p>
+    <% end %>
+    <div>
+      <%= f.label :title %> <!-- generates an html label element -->
+      <br/>
+      <%= f.text_field :title %> <!-- generates an html input element -->
+    </div>
+    <div>
+      <%= f.label :content %> <!-- generates an html label element -->
+      <br/>
+      <%= f.text_area :content %> <!-- generates an html text area element -->
+    </div>
+    <div>
+      <%= f.submit %>
+    </div>
+<% end %>
